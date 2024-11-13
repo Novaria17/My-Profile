@@ -1,0 +1,105 @@
+/* About Me Section */
+.about-me {
+  padding-top: 20%;
+  background-color: #000000;
+}
+
+.about-me .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 4px 8px rgba(226, 98, 200, 0.801);
+}
+
+.about-content {
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-content h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #efe5e5;
+}
+
+.about-content p {
+  font-size: 1em;
+  color: #f0e4e4;
+  line-height: 1.6;
+}
+
+.about-content h2 {
+  margin-top: 20px;
+  color: #f3f2f2;
+  font-size: 1.5em;
+}
+
+.skills-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  color: #e7dcdc;
+}
+
+.skills-list li {
+  font-size: 1em;
+  margin-bottom: 8px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .about-me .container {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .about-content {
+    max-width: 100%;
+  }
+
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+    padding-top: 10%;
+  }
+
+  .about-content h1 {
+    font-size: 1.8em;
+  }
+
+  .about-content p,
+  .skills-list li {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 375px) {
+  .about-me {
+    padding-top: 180px;
+  }
+
+  .profile-image img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about-content h1 {
+    font-size: 1.6em;
+  }
+
+  .about-content p,
+  .skills-list li {
+    font-size: 0.9em;
+  }
+}

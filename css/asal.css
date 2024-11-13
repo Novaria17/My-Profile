@@ -1,0 +1,58 @@
+/* Gaya dasar untuk Skills/Services */
+.asal-services {
+  padding: 40px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+
+.asal-services h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.asal-services p {
+  color: #854f82;
+  margin-bottom: 30px;
+}
+
+/* Grid container untuk skill items */
+.asal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.asal-item {
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #0f0f0f;
+  box-shadow: 0 4px 8px rgba(248, 134, 208, 0.816);
+  transition: transform 0.3s ease;
+}
+
+.asal-item h3 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.asal-item p {
+  color: #666;
+}
+
+/* Hover effect */
+.asal-item:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  .asal-services {
+    padding: 20px;
+  }
+
+  .asal-grid {
+    grid-template-columns: 1fr;
+  }
+}
